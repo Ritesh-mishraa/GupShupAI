@@ -1,0 +1,243 @@
+.chatWindow {
+  flex: 1;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar span {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #ff6fd8, #3813c2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.userIcon {
+  margin: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  background: linear-gradient(135deg, #8e2de2, #ff416c);
+  height: 32px;
+  width: 32px;
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 65, 108, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* Chat Input */
+.chatInput {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.inputBox {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 16px 20px;
+  font-size: 0.95rem;
+  border-radius: 30px;
+  color: #e5e7eb;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+#submit {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: #ff6fd8;
+  transition: transform 0.3s ease;
+}
+
+#submit:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.info-box {
+  font-weight: 300;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  color: #b4b4b4;
+  text-align: center;
+}
+
+.loader {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dropDown {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  width: 150px;
+  background-color: #323232;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  text-align: left;
+  z-index: 1000;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropDownItem {
+  margin: 0.3rem 0rem;
+  padding: 0.5rem 0.3rem;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.dropDownItem i {
+  margin-right: 0.3rem;
+  padding: 0.5rem 0.2 rem;
+  font-size: 0.9rem;
+}
+
+.dropDownItem:hover {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+
+/* Add inside chatWindow.css */
+
+#mic {
+  margin-right: 30px;
+  padding: 15px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: #ff6fd8;
+  transition: transform 0.3s ease;
+}
+
+#mic:hover {
+ color: #fff;
+  transform: scale(1.1);
+}
+
+/* Style for when listening is ON */
+.mic-active {
+  color: #ff4444 !important; /* Red color */
+  background-color: rgba(255, 68, 68, 0.2);
+  animation: pulse 1.5s infinite;
+}
+
+/* @keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 230px;
+  }
+}
+
+@media (max-width: 700px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+
+  .chatWindow {
+    height: calc(100vh - 60px);
+  }
+
+  .messages {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  input {
+    padding: 14px;
+    font-size: 0.85rem;
+  }
+
+  .icon {
+    height: 28px;
+    width: 28px;
+  }
+
+  #submit {
+    height: 36px;
+    width: 36px;
+  }
+}
+ */
