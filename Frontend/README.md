@@ -1,16 +1,44 @@
-# React + Vite
+Filename: `frontend/README.md`
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+```markdownmarkdown
+# 💬 GupShupAI - Frontend
 
-Currently, two official plugins are available:
+The user interface for GupShupAI, built with React. It manages user state, handles voice input, and renders chat history with syntax highlighting.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Installation
 
-## React Compiler
+Install Dependencies:
+    ```bash
+    npm install
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🏃‍♂️ Running the App
+    ```bash
+    npm start
+    # OR if using Vite
+    npm run dev
+    ```
+The app will run at http://localhost:3000 (or http://localhost:5173 for Vite).
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- React.js
+- Context API
+- CSS3
+- React Router
+- Web Speech API
+- react-syntax-highlighter
+- react-typing-effect
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧩 Key Components
+- ChatArea.jsx: The main chat window containing the input box, voice toggle, and message rendering.
+
+- SideBar.jsx: Manages the list of chat history and new chat creation.
+
+- Signup/Login.jsx: Handles user authentication and redirects.
+
+- MyContext.jsx: Global state management for themes, user data, and chat lists.
+
+🎙️ Voice Input Note
+The voice input feature uses the Web Speech API, which is supported in most modern browsers. Ensure your browser has microphone access enabled for this feature to work.
+
+## 🤝 Contributing
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
